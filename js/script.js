@@ -9,16 +9,12 @@ function writeTextByJS(id, text, speed){
 
             return clearInterval(interval);
      };
-
-     // console.log(txt[0] == '~');
      if (txt[0] == '~') {
         txt.shift()
         ele.innerHTML += '<br>';
      } else{
       ele.innerHTML += txt.shift();
      }
-     // console.log(txt[0] = '~');
-     // ele.innerHTML += txt.shift();
    }, speed != undefined ? speed : 100);
 
    return false;
@@ -31,5 +27,5 @@ writeTextByJS(
        "Снег валит пускай с небес ~",
        "А печалька - валит прочь! ~"
     ],
-    5000
+    100
 );
