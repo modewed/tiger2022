@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Neucha');
+html,body{
+  overflow-y:hidden;
+}
+
+body{
+	background: linear-gradient(#51b2ff, white);
+	height: 100vh;
+	font-family: Neucha;
+	font-style: italic;
+}
+.mainText{
+	font-size: 115px;
+	text-align: center;
+	color: white;
+	font-weight: 500;
+	padding-top: 80px;
+}
+.tiger>img{
+	height: 500px;
+}
+.congratulation{
+	padding-left: 90px;
+	padding-top: 200px;
+	text-align: left;
+	font-size: 45px;
+	color:#0066cc;
+}
+.congratulation-wraper, .tiger-wraper{
+	display: inline-block;
+}
+.row{
+	padding-left: -15px;
+	padding-right: -15px;
+	padding-top: 50px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.col{
+	flex-basis: 0;
+    flex-grow: 1;
+}
+
+
+.typed-cursor{
+    opacity: 1;
+    font-weight: 200;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
